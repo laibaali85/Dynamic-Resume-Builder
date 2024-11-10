@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME BUILDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DYNAMIC RESUME BUILER by Laiba Ali</h1>
+    <form id="resumeform">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="image">Profile Picture : </label><br>
+        <input type="file" name ="profile" id="profile"><br><br>
+        <label for="name">Name : </label><br>
+        <input  id="name" type="text" placeholder="laiba Ali "  name="name" required><br><br>
+        <label for="email">Email : </label><br>
+        <input  id="email" type="text" placeholder="laibaali858452@gmail.com "  name="email" required><br><br>
+        <label for="contact">Contact No : </label><br>
+        <input  id="tel" type="number" placeholder="+9876543210 "  name="tel" required>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Education</legend>
+        <label for="edu">Education</label>
+        <textarea name="Education" id="Education" rows="5"></textarea></fieldset> <br>
+        <fieldset>
+        <legend>Experience</legend>
+        <label for="exp">Experience</label>
+        <textarea name="exp" id="exp" rows="5"></textarea> <br>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills</label>
+        <textarea name="skills" id="skills" rows="5"></textarea> <br>
+    </fieldset><br>
+     <button type="submit">Generate Resume Below</button>
+    </form>
+
+    <div id="resumeOutput">
+        <!-- resume will be generated below -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
